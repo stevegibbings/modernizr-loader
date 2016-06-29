@@ -61,6 +61,24 @@ if (!Modernizr.promises) {
 }
 ```
 
+
+If you only use Modernizr CSS classes in your project's CSS you can include your Modernizr tests by adding the module to an entry chunk:
+
+```javascript
+// ...
+
+entry: {
+    main: ['modernizr', './your/javascript/modules'],
+},
+
+// ...
+```
+
+You will not then need to import or require Modernizr in your module unless you wish to use the javascript API.
+
+NOTE: You must add the setClasses option in your `.modernizrrc` configuration file to get Modernizr to add the CSS classes.
+
+
 See the [Modernizr documentation](https://modernizr.com/docs) for all available options.
 
 ## Contribution
