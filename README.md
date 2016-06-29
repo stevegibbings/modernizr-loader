@@ -62,7 +62,7 @@ if (!Modernizr.promises) {
 ```
 
 
-If you only use Modernizr CSS classes in your project's CSS you can include your Modernizr tests by adding the module to an entry chunk:
+If you only use Modernizr CSS classes in your project's CSS you can include your tests by adding the module to an entry chunk:
 
 ```javascript
 // ...
